@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>독버섯의 고량주</title>
+  <link rel = "stylesheet" href="./style.css">
+</head>
+ <body>
+  <header>
+    <span class = "topbar">💗독버섯의 고량주💗</span>
+  </header>
+  <main>
+    <div class = "sidebar" id="sidebar">
+    <button type="button" class="adding-btn" id="addItem">추가</button>
+    <ul>
+      <li>소주</li>
+      <li>맥주</li>
+      <li>샴페인</li>
+      <li>와인</li>
+      <li>럼</li>
+    </ul>
+    </div>
+    <div class = "juryubox" id="juryubox">
+      <div class = "box">
+        <img src="./images/soju.png" alt="소주" />
+        <span>소주는 토닉워터랑 섞어먹는 걸 좋아해요.</span>
+      </div>
+      <div class = "box">
+        <img src="./images/beer.jpg" alt="맥주" />
+        <span>맥주는 가볍고 깔끔한 게 좋아요. 전 블랑을 사랑해요.</span>
+      </div>
+      <div class = "box">
+        <img src="./images/champagne.jpg" alt="샴페인" />
+        <span>아직 응애라서 샴페인을 먹어본 적이 없어요.</span>
+      </div>
+      <div class = "box">
+        <img src="./images/wine.jpg" alt="와인" />
+        <span>와인은 스테이크랑 궁합이 좋다고 생각해요.</span>
+      </div>
+      <div class = "box">
+        <img src="./images/rum.jpg" alt="럼" />
+        <span>럼보다는 칵테일이 더 좋아요.</span>
+      </div>
+    </div>
+  </main>
+
+  <div class="modalBackground" id="modal">
+    <form class="modal" id="addingItemModal">
+      <span class = "closingModal" id="closingModal">X</span>
+      <label for="name" class="marker">이름</label>
+      <input id="name" type="text" class="input" placeholder="막걸리">
+      <label for="image" class="marker">이미지</label>
+      <input id="image" type="text" class="input" placeholder="이미지 링크">
+      <label for="content" class="marker">내용</label>
+      <input id="content" type="text" class="input" placeholder="주로 쌀과 누룩으로 만들어져요.">
+      <button type="submit" class="submitting-btn">저장</button>
+    </form>
+  </div>
+  <script src = "./modalBox.js"></script>
+  <script src = "./addingItem.js"></script>
+ </body>
+</html>
